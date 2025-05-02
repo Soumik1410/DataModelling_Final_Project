@@ -49,6 +49,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Applicant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Applicant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Company -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Company">
@@ -616,21 +625,21 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Company_Type"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Department"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Industry"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -727,7 +736,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Date_of_Joining"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -741,7 +750,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Last_Date_of_Work"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -755,7 +764,7 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Type"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </owl:equivalentClass>
@@ -792,6 +801,27 @@
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_No_of_Openings"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role_Category"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Department"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
@@ -813,28 +843,7 @@
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_No_of_Openings"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Title"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role_Category"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
@@ -1117,6 +1126,7 @@ PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting3">
         <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Applicant rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Soumik_Pal"/>
         <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm"/>
         <naukri-version-1:Jobs_Department>Human Resources</naukri-version-1:Jobs_Department>
         <naukri-version-1:Jobs_Experience>5 - 8 Years</naukri-version-1:Jobs_Experience>
@@ -1383,6 +1393,7 @@ PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting8">
         <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Fortis"/>
         <naukri-version-1:Jobs_Department>Healthcare &amp; Life Sciences</naukri-version-1:Jobs_Department>
         <naukri-version-1:Jobs_Experience>2 - 5 Years</naukri-version-1:Jobs_Experience>
         <naukri-version-1:Jobs_Industry>Medical Services / Hospital</naukri-version-1:Jobs_Industry>
@@ -1591,6 +1602,7 @@ PG: M.Tech/M.Sc(Science) in Any Specialization</naukri-version-1:Jobs_Min_Educat
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Soumik_Pal">
         <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <naukri-version-1:Applicants_Applied_To rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting3"/>
         <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_X"/>
         <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_XII"/>
         <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#UG"/>

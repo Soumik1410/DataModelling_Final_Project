@@ -1,0 +1,1000 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5/"
+     xml:base="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:monstor_v5="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#appliedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#appliedFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasApplicant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasApplicant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasCompany -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasCompany">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasEducation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasEducation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasExperience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasPostedJob -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#hasPostedJob">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_awards -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_awards">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_countriesOfResidency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_countriesOfResidency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_coursesCertifications -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_coursesCertifications">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_educationList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_educationList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_languages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_languages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_linkedInURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_linkedInURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_mobileNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_mobileNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_preferredLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_preferredLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_preferredRole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_preferredRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_profileSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_profileSummary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_projects -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_projects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_resumeURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_resumeURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_skillsList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_skillsList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_speciallyAbled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_speciallyAbled">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_totalWorkExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_totalWorkExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_workExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_workExperience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_workPermitCountries -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant_workPermitCountries">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_aboutCompany -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_aboutCompany">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_headOfficeLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_headOfficeLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_degree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_degree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_graduationYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_graduationYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_percent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_percent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_university -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education_university">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_companyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_companyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience_title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_experienceMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_experienceMax">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_experienceMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_experienceMin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_function -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_function">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_industry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_industry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_jobType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_numApplicants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_numApplicants">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_postedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_postedDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_salaryMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_salaryMax">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_salaryMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_salaryMin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_skillList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_skillList">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Aman_Bahuguna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Aman_Bahuguna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Applicant"/>
+        <monstor_v5:appliedFor rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_108777623"/>
+        <monstor_v5:appliedFor rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109809283"/>
+        <monstor_v5:hasEducation rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_B.E."/>
+        <monstor_v5:hasEducation rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_M.Tech"/>
+        <monstor_v5:hasExperience rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Exp_Aman_DevOps"/>
+        <monstor_v5:Applicant_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</monstor_v5:Applicant_age>
+        <monstor_v5:Applicant_awards>None</monstor_v5:Applicant_awards>
+        <monstor_v5:Applicant_countriesOfResidency>India</monstor_v5:Applicant_countriesOfResidency>
+        <monstor_v5:Applicant_coursesCertifications>Python for Everybody - Coursera
+Machine Learning Specialization - Coursera
+Deep Learning Specialization - Coursera</monstor_v5:Applicant_coursesCertifications>
+        <monstor_v5:Applicant_educationList>M.Tech Computer Science, IIIT Bangalore
+B.E. Computer Science, Chandigarh University</monstor_v5:Applicant_educationList>
+        <monstor_v5:Applicant_email>Aman.Bahuguna@iiitb.ac.in</monstor_v5:Applicant_email>
+        <monstor_v5:Applicant_gender>Male</monstor_v5:Applicant_gender>
+        <monstor_v5:Applicant_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2001</monstor_v5:Applicant_id>
+        <monstor_v5:Applicant_languages>Hindi, English</monstor_v5:Applicant_languages>
+        <monstor_v5:Applicant_linkedInURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://linkedin.com/in/amanbahuguna</monstor_v5:Applicant_linkedInURL>
+        <monstor_v5:Applicant_mobileNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7302286273</monstor_v5:Applicant_mobileNumber>
+        <monstor_v5:Applicant_name>Aman Bahuguna</monstor_v5:Applicant_name>
+        <monstor_v5:Applicant_nationality>India</monstor_v5:Applicant_nationality>
+        <monstor_v5:Applicant_preferredLocation>Bengaluru, Hyderabad</monstor_v5:Applicant_preferredLocation>
+        <monstor_v5:Applicant_preferredRole>Machine Learning Engineer, Data Scientist</monstor_v5:Applicant_preferredRole>
+        <monstor_v5:Applicant_profileSummary>Currently pursuing Masters in Computer Science from IIIT Bangalore. Experienced in ML, NLP through coursework and projects.</monstor_v5:Applicant_profileSummary>
+        <monstor_v5:Applicant_projects>Face Mask Detection, Classification, and Segmentation | Python, OpenCV, PyTorch
+∗ Developed a computer vision solution to classify and segment face masks in images using both handcrafted features and
+deep learning models
+∗ Implemented binary classification using machine learning classifiers (SVM, Neural Network) and a Convolutional Neural
+Network (CNN) for mask detection.
+∗ Performed region segmentation with traditional methods (thresholding, edge detection) and U-Net for mask segmentation,
+evaluating performance with IoU and Dice score metrics
+∗ Compared and analyzed the performance of machine learning classifiers, CNN, and U-Net on the mask detection and
+segmentation tasks.
+Predictive Model for Candidate Hiring Decisions | Python
+∗ Developed a predictive model to determine whether a candidate would be hired based on attributes like assessment scores
+and experience
+∗ Applied machine learning algorithms, including Logistic Regression, Decision Trees, Random Forest, and Ensemble
+methods, to predict hiring outcomes
+∗ Evaluated the models’ performance and identified key factors influencing the hiring decision
+∗ Fine-tuned model hyperparameters to improve accuracy and provide a more reliable hiring prediction system</monstor_v5:Applicant_projects>
+        <monstor_v5:Applicant_resumeURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/file/d/1E9yygyZPQR2N7sIEVFAkmJB5-VzwMpRI/view?usp=drive_link</monstor_v5:Applicant_resumeURL>
+        <monstor_v5:Applicant_skillsList>Languages: C, C++, Python, SQL
+Technologies/Frameworks: Scikit-learn, Pytorch, OpenCV, NLTK, NumPy, Pandas, Matplotlib, Linux, Git, GitHub, Jenkins, Docker, Ansible, MLflow, Kubernetes</monstor_v5:Applicant_skillsList>
+        <monstor_v5:Applicant_speciallyAbled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</monstor_v5:Applicant_speciallyAbled>
+        <monstor_v5:Applicant_totalWorkExperience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</monstor_v5:Applicant_totalWorkExperience>
+        <monstor_v5:Applicant_workExperience>Comapny Name: Acme Tech
+Job Title: DevOps Engineer
+Description: Built CI/CD pipelines in Jenkins and GitHub Actions; automated deployments with Ansible and Docker.</monstor_v5:Applicant_workExperience>
+        <monstor_v5:Applicant_workPermitCountries>India</monstor_v5:Applicant_workPermitCountries>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Amazon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <monstor_v5:hasPostedJob rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_A2946029"/>
+        <monstor_v5:Company_aboutCompany>Amazon is a global technology company known for e-commerce, cloud computing (Amazon Web Services), digital streaming, and artificial intelligence. Founded in 1994 by Jeff Bezos, it began as an online bookstore and has since expanded into a diversified conglomerate with numerous subsidiaries and ventures</monstor_v5:Company_aboutCompany>
+        <monstor_v5:Company_headOfficeLocation>Seatle, USA</monstor_v5:Company_headOfficeLocation>
+        <monstor_v5:Company_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1005</monstor_v5:Company_id>
+        <monstor_v5:Company_name>Amazon Web Services (AWS)</monstor_v5:Company_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Bajaj -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Bajaj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <monstor_v5:hasPostedJob rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109727075"/>
+        <monstor_v5:Company_aboutCompany>The Bajaj Group is a prominent Indian multinational conglomerate founded in 1926 by Jamnalal Bajaj. Its flagship company, Bajaj Auto, is a leading manufacturer of two-wheelers and three-wheelers, known globally for its products and international presence. The group operates in diverse sectors including automobiles, home appliances, lighting, iron &amp; steel, insurance, travel, and finance.</monstor_v5:Company_aboutCompany>
+        <monstor_v5:Company_headOfficeLocation>Mumbai</monstor_v5:Company_headOfficeLocation>
+        <monstor_v5:Company_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1006</monstor_v5:Company_id>
+        <monstor_v5:Company_name>Bajaj Housing Finance Limited</monstor_v5:Company_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_B.E. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_B.E.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <monstor_v5:Education_degree>Bachelor of Engineering</monstor_v5:Education_degree>
+        <monstor_v5:Education_graduationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2022</monstor_v5:Education_graduationYear>
+        <monstor_v5:Education_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4003</monstor_v5:Education_id>
+        <monstor_v5:Education_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</monstor_v5:Education_percent>
+        <monstor_v5:Education_university>Chandigarh University</monstor_v5:Education_university>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_M.Tech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Edu_Aman_M.Tech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Education"/>
+        <monstor_v5:Education_degree>Master of Technology</monstor_v5:Education_degree>
+        <monstor_v5:Education_graduationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2026</monstor_v5:Education_graduationYear>
+        <monstor_v5:Education_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4004</monstor_v5:Education_id>
+        <monstor_v5:Education_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</monstor_v5:Education_percent>
+        <monstor_v5:Education_university>IIIT Bangalore</monstor_v5:Education_university>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Exp_Aman_DevOps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Exp_Aman_DevOps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Experience"/>
+        <monstor_v5:Experience_companyName>Acme Tech</monstor_v5:Experience_companyName>
+        <monstor_v5:Experience_description>Built CI/CD pipelines in Jenkins and GitHub Actions; automated deployments with Ansible and Docker.</monstor_v5:Experience_description>
+        <monstor_v5:Experience_duration rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</monstor_v5:Experience_duration>
+        <monstor_v5:Experience_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5002</monstor_v5:Experience_id>
+        <monstor_v5:Experience_title>DevOps Engineer</monstor_v5:Experience_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <monstor_v5:hasPostedJob rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_110408427"/>
+        <monstor_v5:Company_aboutCompany>Google is a multinational technology company primarily known for its search engine and a wide array of internet services. Founded in 1998 by Larry Page and Sergey Brin, the company&apos;s mission is to &quot;organize the world&apos;s information and make it universally accessible and useful&quot;. Google&apos;s headquarters, known as the &quot;Googleplex,&quot; are located in Mountain View, California.</monstor_v5:Company_aboutCompany>
+        <monstor_v5:Company_headOfficeLocation>Mountain View, California, USA</monstor_v5:Company_headOfficeLocation>
+        <monstor_v5:Company_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1007</monstor_v5:Company_id>
+        <monstor_v5:Company_name>Google</monstor_v5:Company_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Infosys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Infosys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <monstor_v5:hasPostedJob rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_108777623"/>
+        <monstor_v5:Company_aboutCompany>Infosys is a global leader in next-generation digital services and consulting. Over 300,000 of our people work to amplify human potential and create the next opportunity for people, businesses and communities.</monstor_v5:Company_aboutCompany>
+        <monstor_v5:Company_headOfficeLocation>Bengaluru</monstor_v5:Company_headOfficeLocation>
+        <monstor_v5:Company_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1008</monstor_v5:Company_id>
+        <monstor_v5:Company_name>Infosys Limited</monstor_v5:Company_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_108777623 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_108777623">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <monstor_v5:hasApplicant rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Aman_Bahuguna"/>
+        <monstor_v5:hasCompany rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Infosys"/>
+        <monstor_v5:Job_experienceMax rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</monstor_v5:Job_experienceMax>
+        <monstor_v5:Job_experienceMin rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</monstor_v5:Job_experienceMin>
+        <monstor_v5:Job_function>Technology</monstor_v5:Job_function>
+        <monstor_v5:Job_industry>IT/Computers - Software</monstor_v5:Job_industry>
+        <monstor_v5:Job_jobDescription>Key Responsibilities:
+A day in the life of an Infoscion
+As part of the Infosys delivery team your primary role would be to ensure effective Design Development Validation and Support activities to assure that our clients are satisfied with the high levels of service in the technology domain
+You will gather the requirements and specifications to understand the client requirements in a detailed manner and translate the same into system requirements
+You will play a key role in the overall estimation of work requirements to provide the right information on project estimations to Technology Leads and Project Managers
+You would be a key contributor to building efficient programs systems and if you think you fit right in to help our clients navigate their next in their digital transformation journey this is the place for you
+If you think you fit right in to help our clients navigate their next in their digital transformation journey this is the place for you
+Technical Requirements:
+Technology Cloud Platform GCP Database Google BigQuery
+Additional Responsibilities:
+Knowledge of design principles and fundamentals of architecture
+Understanding of performance engineering
+Knowledge of quality processes and estimation techniques
+Basic understanding of project domain
+Ability to translate functional nonfunctional requirements to systems requirements
+Ability to design and code complex programs
+Ability to write test cases and scenarios based on the specifications
+Good understanding of SDLC and agile methodologies
+Awareness of latest technologies and trends
+Logical thinking and problem solving skills along with an ability to collaborate</monstor_v5:Job_jobDescription>
+        <monstor_v5:Job_jobID>108777623</monstor_v5:Job_jobID>
+        <monstor_v5:Job_jobTitle>GCP/Google Cloud Platform Developer</monstor_v5:Job_jobTitle>
+        <monstor_v5:Job_location>Bengaluru</monstor_v5:Job_location>
+        <monstor_v5:Job_numApplicants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</monstor_v5:Job_numApplicants>
+        <monstor_v5:Job_postedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-24T16:00:00</monstor_v5:Job_postedDate>
+        <monstor_v5:Job_skillList>Technology-&gt;Cloud Platform-&gt;GCP Core Services,Technology-&gt;Cloud Platform-&gt;Azure Devops-&gt;data on cloud-gcp,Technology-&gt;Cloud Platform-&gt;GCP App Development</monstor_v5:Job_skillList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109727075 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109727075">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <monstor_v5:hasCompany rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Bajaj"/>
+        <monstor_v5:Job_experienceMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</monstor_v5:Job_experienceMax>
+        <monstor_v5:Job_experienceMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</monstor_v5:Job_experienceMin>
+        <monstor_v5:Job_function>Finance</monstor_v5:Job_function>
+        <monstor_v5:Job_industry>Other</monstor_v5:Job_industry>
+        <monstor_v5:Job_jobDescription>Job Description
+Company Description
+
+Bajaj Housing Finance Limited (BHFL), classified as an Upper-Layer NBFC by the RBI, is a subsidiary of Bajaj Finance Limited and caters to more than 88.11 million customers across India. Headquartered in Pune, BHFL offers finance for home and commercial space purchases and renovations, loans against property. The Company is rated AAA/Stable for its long-term debt program and A1+ for its short-term debt program by CRISIL and India Ratings.
+
+Role Description
+
+This is a full-time, on-site Sales Manager role located in Raipur. The Sales Manager will be responsible for overseeing sales activities, developing sales strategies, building and maintaining customer relationships, and achieving sales targets set by the company.
+
+Qualifications
+
+Proven experience in sales management and achieving sales targets
+Strong negotiation and communication skills
+Customer relationship management skills
+Ability to develop and implement sales strategies
+Knowledge of financial products and services
+Excellent leadership and team management skills
+Bachelor&apos;s degree in Business Administration or related field
+Relevant certifications in sales management will be a plus</monstor_v5:Job_jobDescription>
+        <monstor_v5:Job_jobID>109727075</monstor_v5:Job_jobID>
+        <monstor_v5:Job_jobTitle>Sales Manager</monstor_v5:Job_jobTitle>
+        <monstor_v5:Job_jobType>Permanent Job</monstor_v5:Job_jobType>
+        <monstor_v5:Job_location>Raipur</monstor_v5:Job_location>
+        <monstor_v5:Job_numApplicants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</monstor_v5:Job_numApplicants>
+        <monstor_v5:Job_postedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:00:00</monstor_v5:Job_postedDate>
+        <monstor_v5:Job_skillList>Sales Management, Team Management, Leadership, Negotiation, Customer Relationship Management, Knowledge of financial products and services, 
+Communication</monstor_v5:Job_skillList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109809283 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109809283">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <monstor_v5:hasApplicant rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Aman_Bahuguna"/>
+        <monstor_v5:hasCompany rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Paytm"/>
+        <monstor_v5:Job_experienceMax rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</monstor_v5:Job_experienceMax>
+        <monstor_v5:Job_experienceMin rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</monstor_v5:Job_experienceMin>
+        <monstor_v5:Job_function>Human Resources</monstor_v5:Job_function>
+        <monstor_v5:Job_industry>Financial Services</monstor_v5:Job_industry>
+        <monstor_v5:Job_jobDescription>Job Description
+Location: Noida or Remote
+
+About Paytm Money:
+
+Paytm Money is a leading digital financial services platform that offers a range of investment products and services to empower individuals to grow their wealth. As a Talent Acquisition Intern at Paytm Money, you will play a crucial role in helping us build a talented team that drives innovation in the fintech industry.
+
+Position Overview:
+
+As a Talent Acquisition Intern, you will work closely with our HR team to support the end-to-end recruitment process. This internship offers hands-on experience in sourcing, screening, and onboarding candidates for various roles within Paytm Money.
+
+Key Responsibilities:
+
+Assist in sourcing candidates through job portals, social media platforms, and professional networks.
+Screen resumes and conduct initial assessments to identify potential candidates.
+Schedule and coordinate interviews with candidates and hiring managers.
+Support in drafting job descriptions and job advertisements.
+Maintain and update candidate databases and our applicant tracking system (ATS).
+Assist in conducting reference checks and background verifications.
+Participate in employer branding initiatives to attract top talent.
+Requirements:
+
+Currently pursuing a degree in Human Resources, Business Administration, or a related field (if applicable).
+Strong communication skills and ability to interact professionally with candidates and team members.
+Detail-oriented with excellent organizational skills.
+Ability to prioritize tasks and work efficiently in a fast-paced environment.
+Proficiency in MS Office (Word, Excel, Outlook) and familiarity with ATS is a plus.
+Proactive attitude and eagerness to learn about talent acquisition processes.
+Benefits:
+
+Gain valuable hands-on experience in talent acquisition and recruitment within a leading fintech organization.
+Opportunity to work closely with experienced HR professionals and receive mentorship.
+Flexible work environment: option to work remotely or from our Noida office.
+Certification upon successful completion of the internship.
+Contribute to shaping the future of fintech through innovative recruitment strategies.
+Duration: 3 Months</monstor_v5:Job_jobDescription>
+        <monstor_v5:Job_jobID>109809283</monstor_v5:Job_jobID>
+        <monstor_v5:Job_jobTitle>Talent Acquisition Manager-Paytm Money</monstor_v5:Job_jobTitle>
+        <monstor_v5:Job_jobType>Permanent Job</monstor_v5:Job_jobType>
+        <monstor_v5:Job_location>Noida</monstor_v5:Job_location>
+        <monstor_v5:Job_numApplicants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</monstor_v5:Job_numApplicants>
+        <monstor_v5:Job_postedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-28T16:00:00</monstor_v5:Job_postedDate>
+        <monstor_v5:Job_skillList>Talent Acquisition, Screening, communication, Sourcing, ATS, Ms Office</monstor_v5:Job_skillList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_110408427 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_110408427">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <monstor_v5:hasCompany rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Google"/>
+        <monstor_v5:Job_experienceMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</monstor_v5:Job_experienceMax>
+        <monstor_v5:Job_experienceMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</monstor_v5:Job_experienceMin>
+        <monstor_v5:Job_function>Information Technology</monstor_v5:Job_function>
+        <monstor_v5:Job_industry>Other</monstor_v5:Job_industry>
+        <monstor_v5:Job_jobDescription>Job Description
+Minimum qualifications:
+
+Bachelor&apos;s degree in Computer Science or IT-related field, or equivalent practical experience.
+2 years of experience with systems automation.
+2 years of experience with technical infrastructure (e.g., deployment, maintenance, troubleshooting).
+
+Preferred qualifications:
+
+3 years of experience with systems design and implementation.
+
+About The Job
+
+Systems Development Engineering (SDE) at Google is a role where you manage services and systems at scale. SDEs creatively put their engineering discipline to use automating the mundane and reducing toil. We don&apos;t just write code to fix bugs, but emphasize the development of tools and solutions that fix classes of problems. We know it&apos;s hard to control what you can&apos;t measure so we focus on observability: instrumenting first, then turning data into knowledge, and finally knowledge into action. We know that the operational efficiency of Google systems, services, virtual compute environments and the operating systems that power them impact the environment, not just the bottom line. We know that working together we can do more, and that community matters.
+
+Google brings together people with a wide variety of backgrounds, experiences and perspectives. We encourage them to collaborate, think big and take risks in a blame-free environment. We promote self-direction to work on meaningful projects, while we also strive to create an environment that provides the support and mentorship needed to learn and grow.
+
+Together we engineer and build the infrastructure, tools, access and telemetry for systems that enable orchestration of Google-scale services. Come build things that matter.
+
+Google Cloud accelerates every organization&apos;s ability to digitally transform its business and industry. We deliver enterprise-grade solutions that leverage Google&apos;s cutting-edge technology, and tools that help developers build more sustainably. Customers in more than 200 countries and territories turn to Google Cloud as their trusted partner to enable growth and solve their most critical business problems.
+
+Responsibilities
+
+Participate in on-call activities and manage the systems within the domain and work with the primary responders to help fix system issues.
+Troubleshoot technical issues, evaluate technical data, and develop recommendations for systems and services within the domain, respond to tickets/bugs within team-defined service-level objectives (SLOs), and contribute to systems and services in related domains through bug reports and consultation.
+Work with customers on defining distributed systems requirements, testing procedures, and proposing solutions.
+
+Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also Google&apos;s EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know by completing our Accommodations for Applicants form .</monstor_v5:Job_jobDescription>
+        <monstor_v5:Job_jobID>110408427</monstor_v5:Job_jobID>
+        <monstor_v5:Job_jobTitle>Systems Development Engineer, Google Cloud</monstor_v5:Job_jobTitle>
+        <monstor_v5:Job_jobType>Permanent Job</monstor_v5:Job_jobType>
+        <monstor_v5:Job_location>Bengaluru</monstor_v5:Job_location>
+        <monstor_v5:Job_numApplicants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</monstor_v5:Job_numApplicants>
+        <monstor_v5:Job_postedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-30T16:00:00</monstor_v5:Job_postedDate>
+        <monstor_v5:Job_skillList>systems automation, Implementation, technical infrastructure, Troubleshooting, systems design, maintenance, Deployment</monstor_v5:Job_skillList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_A2946029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_A2946029">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_Posting"/>
+        <monstor_v5:hasCompany rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Amazon"/>
+        <monstor_v5:Job_experienceMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</monstor_v5:Job_experienceMax>
+        <monstor_v5:Job_experienceMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</monstor_v5:Job_experienceMin>
+        <monstor_v5:Job_function>Finance</monstor_v5:Job_function>
+        <monstor_v5:Job_industry>Other</monstor_v5:Job_industry>
+        <monstor_v5:Job_jobDescription>Job Description
+Description
+
+GAR (Global Accts Rec) is looking for a proactive, customer and detail oriented Collections Analyst whose main responsibility will be to manage and resolve receivables related queries received from Amazon customers. As a Collections Analyst, you will support Amazon&apos;s customers to resolve billing issues, reconcile accounts and drive monthly collection targets. The successful individual is expected to be self-motivated, be a quick learner, have strong ownership and earn trust with our customers to facilitate timely payment
+
+Key job responsibilities
+
+Key job responsibilities
+
+Understanding of Accounts Receivables process
+Follow-up with customers via emails and phone calls to ensure timely collection of payments for assigned portfolio
+Maintain detailed post correspondence update on accounts receivable records to ensure aging is up to date, credits and collections are applied, uncollectible amounts are accounted for, and miscellaneous differences are cleared
+Collaborate with various stakeholders (Billing, Finance, Legal, Tax, Customer Service) to resolve customer disputes and queries, to establish and maintain good client relationships, both internally and externally
+Monitor high-risk accounts and ensure timely escalation of challenges to management
+Continually look at ways to improve the customer experience
+Assist in streamlining and improving the accounts receivable process by identifying areas of improvement
+Meet the monthly productivity goals
+Reconcile complex accounts and have excellent attention to detail
+Work on manual email assignment queues and have them allocated to appropriate account
+
+Basic Qualifications
+
+Bachelor&apos;s degree in accounting and commerce (B. Com)
+Knowledge of Excel at an advanced level
+Experience with Microsoft Office products and applications
+
+Preferred Qualifications
+
+3+ years of finance operations/shared services, accounts payable, account receivable (collections) or general ledger experience
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you&apos;re applying in isn&apos;t listed, please contact your Recruiting Partner.</monstor_v5:Job_jobDescription>
+        <monstor_v5:Job_jobID>A2946029</monstor_v5:Job_jobID>
+        <monstor_v5:Job_jobTitle>FinOps Analyst AR AWS</monstor_v5:Job_jobTitle>
+        <monstor_v5:Job_jobType>Permanent Job</monstor_v5:Job_jobType>
+        <monstor_v5:Job_location>Hyderabad</monstor_v5:Job_location>
+        <monstor_v5:Job_numApplicants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</monstor_v5:Job_numApplicants>
+        <monstor_v5:Job_postedDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-30T16:00:00</monstor_v5:Job_postedDate>
+        <monstor_v5:Job_skillList>Accounts Receivables process, Microsoft Office products and applications</monstor_v5:Job_skillList>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Paytm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Paytm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Company"/>
+        <monstor_v5:hasPostedJob rdf:resource="http://www.semanticweb.org/ak960/ontologies/2025/4/monstor_v5#Job_109809283"/>
+        <monstor_v5:Company_aboutCompany>Paytm is an Indian multinational financial technology company based in Noida, India, specializing in digital payments and financial services. Founded in 2010 by Vijay Shekhar Sharma under One97 Communications, Paytm provides mobile payment services for consumers and enables merchants to accept payments through various methods like QR codes, Soundbox, and online payment gateways. The company also offers financial services in partnership with financial institutions, such as microcredit and buy now, pay later options.</monstor_v5:Company_aboutCompany>
+        <monstor_v5:Company_headOfficeLocation>Noida</monstor_v5:Company_headOfficeLocation>
+        <monstor_v5:Company_id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</monstor_v5:Company_id>
+        <monstor_v5:Company_name>Paytm</monstor_v5:Company_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

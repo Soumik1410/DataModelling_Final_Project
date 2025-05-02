@@ -53,7 +53,6 @@ public class SemWebController {
 
     @GetMapping("/link")
     public ResponseEntity<String> linkOntologies(@RequestParam String filePathA, @RequestParam String filePathB, @RequestHeader(value = "x-access-token") String token) throws Exception {
-        // Call the service method to link the ontologies
         String response = SemWebServiceObj.linkOntologies(filePathA, filePathB, token);
         if(response.equalsIgnoreCase("Successfully linked and reasoned the ontologies."))
             return ResponseEntity.ok(response);

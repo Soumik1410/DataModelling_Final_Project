@@ -37,7 +37,7 @@ public class SemWebController {
                 merged.add(c1, OWL.equivalentClass, c2);
             }
 
-            Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
+                    Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
             InfModel infModel = ModelFactory.createInfModel(reasoner, merged);
 
             // Print result to console

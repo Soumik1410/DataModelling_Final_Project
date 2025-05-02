@@ -1,6 +1,8 @@
 package com.example.DMProject.controller;
 
+import com.example.DMProject.dto.AdminLoginRequest;
 import com.example.DMProject.service.SemWebService;
+import jakarta.validation.Valid;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
@@ -20,10 +22,19 @@ public class SemWebController {
     @Autowired
     private SemWebService SemWebServiceObj;
 
+    @PostMapping("/loginAdmin")
+    public ResponseEntity<String> loginFaculty(@RequestBody @Valid AdminLoginRequest request) {
+        String response = SemWebServiceObj.loginAdmin(request);
+        if(!response.equals("Login Failed"))
+            return ResponseEntity.ok("Logged in successfully as Admin\nToken: admin");
+        else
+            return ResponseEntity.badRequest().body(response);
+    }
+
     @GetMapping("/link")
-    public ResponseEntity<String> linkOntologies(@RequestParam String filePathA, @RequestParam String filePathB) throws Exception {
+    public ResponseEntity<String> linkOntologies(@RequestParam String filePathA, @RequestParam String filePathB, @RequestHeader(value = "x-access-token") String token) throws Exception {
         // Call the service method to link the ontologies
-        String response = SemWebServiceObj.linkOntologies(filePathA, filePathB);
+        String response = SemWebServiceObj.linkOntologies(filePathA, filePathB, token);
         if(response.equalsIgnoreCase("Successfully linked and reasoned the ontologies."))
             return ResponseEntity.ok(response);
         else

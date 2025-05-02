@@ -1,5 +1,6 @@
 package com.example.DMProject.service;
 
+import com.example.DMProject.dto.AdminLoginRequest;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
@@ -15,8 +16,11 @@ import java.net.URL;
 @Service
 public class SemWebService {
 
-    public String linkOntologies(String filePathA, String filePathB) throws Exception{
+    public String linkOntologies(String filePathA, String filePathB, String token) throws Exception{
         try {
+            if(!token.equals("admin"))
+                return "Invalid token";
+
             // Load models
             OntModel modelA = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
             OntModel modelB = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
@@ -52,5 +56,15 @@ public class SemWebService {
         } catch (Exception e) {
             return "Error: " + e.getMessage();
         }
+    }
+
+    public String loginAdmin(AdminLoginRequest request)
+    {
+        String username = request.name();
+        String password = request.password();
+        if(username.equals("admin") && password.equals("admin"))
+            return "Login Successful";
+        else
+            return "Login Failed";
     }
 }

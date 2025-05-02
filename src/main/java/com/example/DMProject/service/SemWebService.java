@@ -1,6 +1,8 @@
 package com.example.DMProject.service;
 
 import com.example.DMProject.dto.AdminLoginRequest;
+import com.example.DMProject.dto.ApplicantLoginRequest;
+import com.example.DMProject.dto.CompanyLoginRequest;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
@@ -63,6 +65,30 @@ public class SemWebService {
         String username = request.name();
         String password = request.password();
         if(username.equals("admin") && password.equals("admin"))
+            return "Login Successful";
+        else
+            return "Login Failed";
+    }
+
+    public String loginApplicant(ApplicantLoginRequest request)
+    {
+        String username = request.name();
+        String password = request.password();
+        if((username.equals("aman") && password.equals("password")) || (username.equals("soumik") && password.equals("password")))
+            return "Login Successful";
+        else
+            return "Login Failed";
+    }
+
+    public String loginCompany(CompanyLoginRequest request)
+    {
+        String username = request.name();
+        String password = request.password();
+        if((username.equals("fortis") && password.equals("fortis"))
+                || (username.equals("mariott") && password.equals("mariott"))
+                || (username.equals("paytm") && password.equals("paytm"))
+                || (username.equals("sap") && password.equals("sap"))
+                || (username.equals("unacademy") && password.equals("unacademy")))
             return "Login Successful";
         else
             return "Login Failed";

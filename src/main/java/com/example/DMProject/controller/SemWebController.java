@@ -1,6 +1,8 @@
 package com.example.DMProject.controller;
 
 import com.example.DMProject.dto.AdminLoginRequest;
+import com.example.DMProject.dto.ApplicantLoginRequest;
+import com.example.DMProject.dto.CompanyLoginRequest;
 import com.example.DMProject.service.SemWebService;
 import jakarta.validation.Valid;
 import org.apache.jena.ontology.*;
@@ -23,10 +25,28 @@ public class SemWebController {
     private SemWebService SemWebServiceObj;
 
     @PostMapping("/loginAdmin")
-    public ResponseEntity<String> loginFaculty(@RequestBody @Valid AdminLoginRequest request) {
+    public ResponseEntity<String> loginAdmin(@RequestBody @Valid AdminLoginRequest request) {
         String response = SemWebServiceObj.loginAdmin(request);
         if(!response.equals("Login Failed"))
             return ResponseEntity.ok("Logged in successfully as Admin\nToken: admin");
+        else
+            return ResponseEntity.badRequest().body(response);
+    }
+
+    @PostMapping("/loginApplicant")
+    public ResponseEntity<String> loginApplicant(@RequestBody @Valid ApplicantLoginRequest request) {
+        String response = SemWebServiceObj.loginApplicant(request);
+        if(!response.equals("Login Failed"))
+            return ResponseEntity.ok("Logged in successfully as Applicant\nToken: applicant");
+        else
+            return ResponseEntity.badRequest().body(response);
+    }
+
+    @PostMapping("/loginCompany")
+    public ResponseEntity<String> loginCompany(@RequestBody @Valid CompanyLoginRequest request) {
+        String response = SemWebServiceObj.loginCompany(request);
+        if(!response.equals("Login Failed"))
+            return ResponseEntity.ok("Logged in successfully as Company\nToken: company");
         else
             return ResponseEntity.badRequest().body(response);
     }

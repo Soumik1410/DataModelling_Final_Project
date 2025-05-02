@@ -1,0 +1,1690 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1/"
+     xml:base="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:naukri-version-1="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Applied_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Applied_To">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_History -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_History">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Employment_History -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Employment_History">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Company -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Company">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level_PG -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level_PG">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level_UG -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level_UG">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_Level"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Experience_In_Years -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Experience_In_Years">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Key_Skills -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Key_Skills">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Mobile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Mobile">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Preferred_Locations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Preferred_Locations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Surrogate_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Surrogate_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_About_Company -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_About_Company">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Company_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Company_Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Department -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Department">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Industry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Industry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Surrogate_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Surrogate_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_College_or_School_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_College_or_School_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Degree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Degree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Percentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Percentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Surrogate_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Surrogate_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Company -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Company">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Date_of_Joining -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Date_of_Joining">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Job_Role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Job_Role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Last_Date_of_Work -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Last_Date_of_Work">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Surrogate_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Surrogate_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Department -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Department">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Experience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Experience">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Industry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Industry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Job_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Job_Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Key_Skills -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Key_Skills">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Max_Experience_Years -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Max_Experience_Years">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Experience"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Max_Salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Max_Salary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Salary_Range"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education_PG -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education_PG">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education_UG -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education_UG">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Experience_Years -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Experience_Years">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Experience"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Min_Salary">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Salary_Range"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_No_of_Openings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_No_of_Openings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role_Category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role_Category">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Salary_Range -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Salary_Range">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Surrogate_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Surrogate_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Applied_To"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Education_History"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Employment_History"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Age"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Email"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Experience_In_Years"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Gender"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Mobile"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Surrogate_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants_Surrogate_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Company_Type"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Department"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Industry"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Location"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_About_Company"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Surrogate_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies_Surrogate_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_College_or_School_Name"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Degree"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Percentage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Surrogate_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Year"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations_Surrogate_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Company"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Date_of_Joining"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Job_Role"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Last_Date_of_Work"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Surrogate_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Type"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments_Surrogate_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Company"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Key_Skills"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Location"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Department"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Industry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Job_Description"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_No_of_Openings"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Posting_Title"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Role_Category"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Surrogate_ID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Jobs_Surrogate_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <naukri-version-1:Educations_College_or_School_Name>M.C.Kejriwal Vidyapeeth</naukri-version-1:Educations_College_or_School_Name>
+        <naukri-version-1:Educations_Degree>ICSE</naukri-version-1:Educations_Degree>
+        <naukri-version-1:Educations_Percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">95.0</naukri-version-1:Educations_Percentage>
+        <naukri-version-1:Educations_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</naukri-version-1:Educations_Surrogate_ID>
+        <naukri-version-1:Educations_Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</naukri-version-1:Educations_Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_XII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_XII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <naukri-version-1:Educations_College_or_School_Name>M.C.Kejriwal Vidyapeeth</naukri-version-1:Educations_College_or_School_Name>
+        <naukri-version-1:Educations_Degree>ISC</naukri-version-1:Educations_Degree>
+        <naukri-version-1:Educations_Percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">96.25</naukri-version-1:Educations_Percentage>
+        <naukri-version-1:Educations_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4001</naukri-version-1:Educations_Surrogate_ID>
+        <naukri-version-1:Educations_Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</naukri-version-1:Educations_Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Fortis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Fortis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <naukri-version-1:Companies_About_Company>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities. Currently, the company operates its healthcare delivery services in India, Dubai, Mauritius and Sri Lanka with 45 healthcare facilities (including projects under development), approximately 10,000 potential beds and over 374 diagnostic centres. For more information, please visit www.fortishealthcare.com</naukri-version-1:Companies_About_Company>
+        <naukri-version-1:Companies_Company_Type>Corporate</naukri-version-1:Companies_Company_Type>
+        <naukri-version-1:Companies_Department>Administration &amp; Facilities</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Customer Success, Service &amp; Operations</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Finance &amp; Accounting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Food, Beverage &amp; Hospitality</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Healthcare &amp; Life Sciences</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Human Resources</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Legal &amp; Regulatory</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Marketing &amp; Communication</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Procurement &amp; Supply Chain</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Research &amp; Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sales &amp; Business Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Security Services</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Strategic &amp; Top Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Industry>Medical Services/Hospital</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Location>Bengaluru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chandigarh</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Delhi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Faridabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Gurugram</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jaipur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jammu</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kolkata</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Ludhiana</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Manesar</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mohali</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mumbai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Noida</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Name>Fortis</naukri-version-1:Companies_Name>
+        <naukri-version-1:Companies_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</naukri-version-1:Companies_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <naukri-version-1:Employments_Company>Envestnet Yodlee</naukri-version-1:Employments_Company>
+        <naukri-version-1:Employments_Date_of_Joining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-01T00:00:00</naukri-version-1:Employments_Date_of_Joining>
+        <naukri-version-1:Employments_Job_Role>Site Reliability Engineer</naukri-version-1:Employments_Job_Role>
+        <naukri-version-1:Employments_Last_Date_of_Work rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-30T23:59:59</naukri-version-1:Employments_Last_Date_of_Work>
+        <naukri-version-1:Employments_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</naukri-version-1:Employments_Surrogate_ID>
+        <naukri-version-1:Employments_Type>Full Time</naukri-version-1:Employments_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+        <naukri-version-1:Employments_Company>Tata Consultancy Services</naukri-version-1:Employments_Company>
+        <naukri-version-1:Employments_Date_of_Joining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-01T00:00:00</naukri-version-1:Employments_Date_of_Joining>
+        <naukri-version-1:Employments_Job_Role>Lead Performance Engineer</naukri-version-1:Employments_Job_Role>
+        <naukri-version-1:Employments_Last_Date_of_Work rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-17T23:59:59</naukri-version-1:Employments_Last_Date_of_Work>
+        <naukri-version-1:Employments_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5001</naukri-version-1:Employments_Surrogate_ID>
+        <naukri-version-1:Employments_Type>Full Time</naukri-version-1:Employments_Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm"/>
+        <naukri-version-1:Jobs_Department>Engineering - Software &amp; QA</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>3 - 6 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Banking</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>About the role:
+As a Senior Software Engineer, You would be working with the senior technology people of our company with the goal of developing high-quality software, aligned with our business strategy and the user demand.
+
+Requirements:
+
+3 to 6 years of server-side application development experience with Java, Spring boot, Microservice.
+
+Deeply technical with a track record of successful delivery.
+
+An entrepreneurial spirit combined with strong program and product management skills .
+
+Excellent written and verbal communication skills with the ability to present complex plans and design.
+
+Excellent judgment, organizational, and problem-solving skills.
+
+Excellent design and architecture design.
+
+Data driven decision making.
+
+Preferred Qualifications: Bachelor&apos;s/Master&apos;s Degree in Computer Science or equivalent
+
+Skills that will help you succeed in this role:
+
+Language: Java/Node DB: RDBMS, Messaging: Kafka/RabbitMQ, Caching: Redis/Aerospike, Micro services, AWS.
+
+Good experience in scaling, performance tuning &amp; optimization at both API and storage layers
+
+Why join us
+
+Because you get an opportunity to make a difference, and have a great time doing that .
+
+You are challenged and encouraged here to do stuff that is meaningful for you and for those we serve. You should work with us if you think seriously about what technology can do for people .
+
+We are successful, and our successes are rooted in our people&apos;s collective energy and unwavering focus on the customer, and that&apos;s how it will always be.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>SpringBoot, Java, Product Management, Performance tuning, RDBMS, Kafka, AWS, Microservices</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Bengaluru</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: B.Tech/B.E. in Any Specialization
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_PG>B.Tech/B.E.</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Backend - Senior Software Engineer</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Database Administrator</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>DBA / Data Warehousing</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>20,00,000 - 30,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Unacademy"/>
+        <naukri-version-1:Jobs_Department>Teaching &amp; Training</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>1 - 3 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Education / Training</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>Key Responsibilities
+
+Design and develop engaging German language learning content tailored to the needs of the US market.
+Collaborate with the Content Head and other team members to ensure a cohesive and comprehensive curriculum.
+Utilize feedback and data analytics to refine and optimize content for maximum engagement and effectiveness.
+Stay updated with the latest trends in language education to innovate and continuously improve our content offering.
+
+Qualifications
+
+Proficiency in German and strong English communication skills.
+Proven track record of creating compelling content for language learning, preferably with experience working for language learning platforms.
+Demonstrated leadership ability with experience in team collaboration and mentorship.
+Strong understanding of curriculum development and educational content strategy.
+Creative thinker with a data-driven approach to content creation and optimization.
+Bachelor&apos;s degree in German, Education, Linguistics, or a related field is preferred.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>German, Curriculum Development, Content Writing</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Chennai</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: B.Tech/B.E. in Any Specialization
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>UG: B.Tech/B.E. in Any Specialization</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>German Educator</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>University Level Educator - Other</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>University Level Educator</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>5,00,000 - 6,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3009</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm"/>
+        <naukri-version-1:Jobs_Department>Sales &amp; Business Development</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>3 - 8 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Banking</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>Expectations/ Requirements
+1. Must have Smart Phone, Bike &amp; Helmet
+2. Candidate must have a zeal for Growth
+3. Candidate should have good market knowledge
+4. Must have done a Channel Sales Role before with 5 Member Sales Team handled before
+5. Must understand concepts of distribution, expansion, metrics
+6. Must have experience in getting team earn Lucrative Incentives
+
+Education
+Graduate or above / Post Graduation preferred.
+
+Job Descriptions-
+
+Responsible for the Sales enrollments/Sales in the city.
+Do the market race and prepare the list of prospective customers ,
+Handle the Team Members and motivate them for better sales ,
+Ensure the team members are in market where enrollments &amp; usage are done regularly.
+Should have good networking capabilities and be willing to travel extensively throughout their specified areas
+
+Key Role:
+Manage an assigned geographic sales area to maximize sales target and meet corporate.
+Objectives Build Database of key contact persons in the assigned geography.
+Build and maintain relationships with key client personnel Manage Category leads from qualification to closure</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Sales, Relationship Management, Channel Sales, Channel Management, Distribution Management</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Mumbai</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Sales Team Lead</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Territory Sales Manager (B2C)</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Retail &amp; B2C Sales</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>7,00,000 - 12,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3001</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm"/>
+        <naukri-version-1:Jobs_Department>Human Resources</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>5 - 8 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Banking</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>We are seeking an experienced Talent Acquisition Manager to lead recruitment in Noida You will develop and implement effective strategies, manage the full recruitment lifecycle, and lead a team of field recruiters and vendor associates to meet our hiring needs, particularly for sales sub-departments
+Key Responsibilities:
+Develop and implement recruitment strategies
+Manage end-to-end recruitment (sourcing, screening, interviewing, onboarding)
+Collaborate with Regional Heads on hiring requirements
+Manage vendor relationships and payouts
+Lead and manage a team of Field Recruiters and Vendor Associates
+Utilize data to improve recruitment metrics and processes
+Qualifications:
+Bachelors degree
+5+ years of Talent Acquisition experience
+Experience managing a recruitment team preferred
+Strong understanding of sourcing and recruitment processes
+Excellent stakeholder management and communication skills
+Experience with vendor management and ATS
+Data-driven approach to recruitment</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Talent Acquisition, Management, Stakeholder Management, Recruitment Lead, Recruitment</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Noida</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Talent Acquisition Manager</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Recruitment &amp; Talent Acquisition - Other</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Recruitment &amp; Talent Acquisition</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>8,00,000 - 11,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3002</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Mariott"/>
+        <naukri-version-1:Jobs_Department>Food, Beverage &amp; Hospitality</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>1 - 4 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Hotels &amp; Restaurants</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>Prepare ingredients for cooking, including portioning, chopping, and storing food.
+Wash and peel fresh fruits and vegetables.
+Weigh, measure, and mix ingredients.
+Prepare and cook food according to recipes, quality standards, presentation standards, and food preparation checklist.
+Prepare cold foods.
+Operate ovens, stoves, grill, microwaves, and fryers.
+Test foods to determine if they have been cooked sufficiently.
+Monitor food quality while preparing food.
+Set-up and break down work station.
+Serve food in proper portions onto proper receptacles.
+Wash and disinfect kitchen area, tables, tools, knives, and equipment.
+Check and ensure the correctness of the temperature of appliances and food.
+Follow all company and safety and security policies and procedures; report maintenance needs, accidents, injuries, and unsafe work conditions to manager; complete safety training and certifications.
+Ensure uniform and personal appearance are clean and professional; maintain confidentiality of proprietary information; protect company assets.
+Speak with others using clear and professional language.
+Develop and maintain positive working relationships with others; support team to reach common goals; listen and respond appropriately to the concerns of other employees.
+Ensure adherence to quality expectations and standards.
+Stand, sit, or walk for an extended period of time or for an entire work shift.
+Reach overhead and below the knees, including bending, twisting, pulling, and stooping.
+PREFERRED QUALIFICATION
+Education: High school diploma or G.E.D. equivalent.
+Related Work Experience: At least 1 year of related work experience.
+Supervisory Experience: No supervisory experience.
+License or Certification: None</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Supervisor, Station, Quality Standards. Cooking, Appliances, Safety Training, Culinary Associate</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Bengaluru</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Culinary Associate</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Sous Chef</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Kitchen / F&amp;B Production</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>3,50,000 - 4,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3003</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#SAP"/>
+        <naukri-version-1:Jobs_Department>Engineering - Software &amp; QA</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>4 - 8 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Software Product</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>The current requirement is for a Full-Stack Developer for the SAP Business Intelligence team within the PCP organization . We are looking for highly skilled developers proficient in both Java for backend development and with JavaScript, HTML, and CSS for building frontend applications. The job expectation includes designing, developing, and delivering software modules and components using Java technologies. In addition to being responsible for the full development cycle, the individual in this role will also be responsible for troubleshooting and resolving customer issues and providing ongoing support for existing solutions.
+
+What you ll do:
+This position requires strong problem-solving abilities and analytical skills. The individual must be a quick learner with the ability to work independently.
+
+Develop deep product knowledge at functional and technical level to be able to design, develop, and maintain on-going development requests.
+
+Collaborate with Quality Specialists to understand requirements, troubleshoot issues, and ensure code meets quality and performance standards.
+
+Implement new features and enhancements, write clean, efficient, and reusable code, following best practices and coding standards.
+
+Participate in code reviews, provide constructive feedback to peers, and continuously improve development processes and practices within the team.
+
+Perform in-depth code level technical and functional analysis and debugging of complex issues reported by customers to formulate appropriate solutions and ensure high customer satisfaction.
+
+
+What you bring:
+
+Strong hands-on experience in Object-oriented programming methodology with experience between 4-8 years.
+
+Experience with Service-oriented application development architecture.
+
+Hands-on experience with Java programming language (Backend) and JavaScript, HTML and CSS web programming (Frontend).
+
+Hands-on experience in developing Web services.
+
+Experience with Web application security model.
+
+Experience with at least one major database (SAP HANA, DB2 or Microsoft SQL Server).
+
+Experience with at least one major web application server is preferred (e. g. Tomcat, WebSphere, or WebLogic)
+
+Prior knowledge on SAP BusinessObjects or Business Intelligence in general is preferred.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Tomcat, Db2, Javascript, HTML, Application Development</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Bengaluru</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Java Full Stack Developer</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Full Stack Developer</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Software Development</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>6,00,000 - 14,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3004</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#SAP"/>
+        <naukri-version-1:Jobs_Department>IT &amp; Information Security</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>8 - 10 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Software Product</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>In this role, you will not only conduct an initial assessment of the event, but also help scope and determine root cause analysis, support development of attack remediation strategies and coordinate the communication and handling of escalations of security activities. This role also triages operational response processes like those intervening in phishing campaigns. You will also assist in the review and updating of incident handling processes, standard operating procedures, playbooks and runbooks.
+
+You will work with Detection and SIEM teams to make improvements to detection and alerting mechanisms and support forensic investigations to determine incident details and provide supporting evidence.
+
+What you bring
+
+You should have demonstrated experience in cyber-attack analysis and of working in a similar 24/7 environments managing cases with enterprise SIEM or Incident Management systems. Previous experience of supporting multi-function, cross-organizational teams is also highly desirable.
+
+We are looking for analytical, critical thinkers, who have an eye for detail and are solution orientated. You should be quick to learn and adapt and operate in a dynamic environment.
+
+You typically will have most of the following technical skills and experience:
+8+ years experience in a similar incident Investigator role or equivalent combination of education, certifications, and trainings
+Security certification (e.g. Security+, GCIA, GCIH, CISSP)
+Knowledge APT actors; their tools, techniques, and procedures (TTPs)
+Knowledge of TTP methods and frameworks
+Knowledge of TCP/IP communications knowledge of how common protocols and applications work at the network level, including DNS, HTTP, and SMB
+Solid knowledge of one or more:
+Windows/AD file system, registry functions and memory artifacts
+Unix/Linux file systems and memory artifacts
+Mac file systems and memory artifacts
+Database, web application, cloud, or mobile device cyber incident response principals and techniques
+Cybersecurity automation
+Web servers and web applications.
+SIEM
+Security tools: IPS, Web proxy, Email proxy, pDNS, Deception, EDR etc....
+Experience with one or more scripting languages (Powershell, Python, Bash, etc.)
+Experience with integration of threat hunting and cyber threat intelligence into the incident response process
+Experience with information security compliance audit frameworks and requirements e.g. ISO, FISMA, FedRAMP, SOC, SOX, PCI, GDPR and Data Privacy</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Unix, Automation, Linux,Information security, SOC, DNS, HTTP</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Bengaluru</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>UG: Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Cyber Incident Response and Recovery Investigator</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>IT &amp; Information Security - Other</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>IT &amp; Information Security - Other</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>6,00,000 - 8,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3005</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#SAP"/>
+        <naukri-version-1:Jobs_Department>Data Science &amp; Analytics</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>5 - 10 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Software Product</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>RESPONSIBILITIES:
+Design and Build Scalable ETL Pipelines: Architect, build, and optimize large-scale ETL/ELT data pipelines, focusing on performance, scalability, and data integrity. Ensure the pipelines integrate smoothly within the larger data ecosystem.
+Microservices Development and Maintenance: Design and implement microservices for managing data processing tasks. Build reusable and scalable services to handle various data processing needs and ensure maintainability.
+Implement DevOps Practices : Utilize DevOps tools and practices (CI/CD) for automating testing, building, and deployment of data pipelines and microservices. Ensure that data workflows, models, and infrastructure are robust and can scale in a cloud-native environment.
+Data Integration and Transformation : Collaborate with cross-functional teams to design seamless data integrations between the Transaction system and Data Platform. Focus on data transformation, cleansing, and deduplication while ensuring the pipelines are efficient and maintainable.
+Optimize Data Processing : Tune ETL pipeline performance, focusing on real-time data processing and optimizing for low-latency data delivery. Troubleshoot and debug complex pipeline issues in distributed systems.
+Database and Big Data Tools Management : Work extensively with SQL for structured data and leverage big data tools like Hive, HBase, and Parquet for large-scale data storage and querying.
+Performance Optimization Data Quality : Drive data quality initiatives including data deduplication, data transformation, and performance optimizations across data pipelines and services.
+Collaboration and Mentorship : Partner with Data Scientists, Analysts, and Engineers to ensure seamless data integration. Provide technical leadership, mentorship, and guidance to junior engineers, fostering best practices in both data engineering and DevOps.
+SKILLS COMPETIENCES:
+Strong expertise in Python, Java, or Scala for building scalable data pipelines and microservices.
+Proven experience working with Apache Spark, Kafka, and Airflow for building data workflows and processing large datasets.
+Strong knowledge of SQL for querying structured data and interacting with databases.
+Hands-on experience with microservices architecture for building, deploying, and managing data services.
+Experience working in a DevOps environment using tools like Jenkins, Git, Docker, and Kubernetes to support continuous integration and delivery.
+Expertise in big data tools such as Hive, HBase, Parquet, and other storage solutions for managing large volumes of data.
+Hands-on experience with data transformation, deduplication, performance optimization, and distributed systems.
+Familiarity with Machine Learning workflow integration and automating ML data pipelines.
+Ability to architect and scale microservices for high-volume data workloads.
+Strong problem-solving skills with a focus on troubleshooting and debugging in a distributed data environment.
+Experience in mentoring and providing technical leadership to junior engineers in data engineering and DevOps practices
+WORK EXPERIENCE EDUCATION :
+Requires 5+ years of professional experience is essential for understanding system architecture, programming, and technical troubleshooting.
+Outstanding written and verbal communication skills.
+Bachelors/master s in computer science required.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Machine Learning, Data quality, Analytics, SQL, Python</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Hyderabad</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3500000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Graduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_PG>Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Data Engineer</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Data Engineer</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Data Science &amp; Machine Learning</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>22,00,000 - 35,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3007</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Department>Healthcare &amp; Life Sciences</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>2 - 5 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Medical Services / Hospital</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>Endoscopy Technician with minimum 2 years experience.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Endoscopy, Bronchoscopy, Colonoscopy</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Kolkata</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: Any Graduate
+PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>PG: Any Postgraduate</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>UG: Any Graduate</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Endoscopy Technician @Fortis Hospital, Cunningham Road</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Other Hospital Staff - Other</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Other Hospital Staff</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>3,00,000 - 5,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3007</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobPosting9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        <naukri-version-1:Jobs_Posting_Company rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Unacademy"/>
+        <naukri-version-1:Jobs_Department>Engineering - Software &amp; QA</naukri-version-1:Jobs_Department>
+        <naukri-version-1:Jobs_Experience>3 - 6 Years</naukri-version-1:Jobs_Experience>
+        <naukri-version-1:Jobs_Industry>Education / Training</naukri-version-1:Jobs_Industry>
+        <naukri-version-1:Jobs_Job_Description>We are looking for a Backend Developer to join our team. The ideal candidate should have min 3+ years of experience in developing web applications and should be proficient in back-end development.
+
+Responsibilities: -
+
+Design, develop, and maintain high-quality backend systems and APIs using Go, Python, MySQL, and AWS cloud services.
+Collaborate with cross-functional teams to gather requirements, propose solutions, and implement robust backend systems.
+Take ownership of assigned tasks and ensure timely delivery of high-quality software solutions.
+Participate in the on-call roster and resolve production incidents promptly to maintain system availability and performance.
+Leverage AWS cloud services to design, implement, and optimize backend systems for scalability, security, and cost-effectiveness.
+Participate in code reviews, conduct performance analysis, and ensure adherence to coding standards and best practices.
+Contribute to the improvement of development processes, tools, and methodologies to enhance team productivity and efficiency.
+
+Qualifications: -
+
+3 to 6 Years of professional work experience as a backend engineer.
+Proficiency in Go (Golang) with at least 2 years of experience in building backend systems.
+Proficiency in Python and experience with MySQL database management.
+Solid understanding and experience with AWS cloud services, including but not limited to EC2, S3, Lambda, RDS, and IAM.
+Experience in designing and developing RESTful APIs and integrating them with frontend systems. Strong problem-solving skills and the ability to analyze and resolve complex technical issues.
+Knowledge of software engineering best practices, including coding standards, code reviews, testing, and version control (Git).
+Demonstrated ability to work in a fast-paced, agile startup environment and deliver high-quality software solutions.
+Availability to be part of the on-call roster and work from our office in Bangalore.
+Bachelors or masters degree in computer science, Engineering, or a related field is preferred.</naukri-version-1:Jobs_Job_Description>
+        <naukri-version-1:Jobs_Key_Skills>Python, Rest, Software Testing, Golang, SQL, Docker, GIT, Java, AWS, Agile</naukri-version-1:Jobs_Key_Skills>
+        <naukri-version-1:Jobs_Location>Bengaluru</naukri-version-1:Jobs_Location>
+        <naukri-version-1:Jobs_Max_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</naukri-version-1:Jobs_Max_Experience_Years>
+        <naukri-version-1:Jobs_Max_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100000</naukri-version-1:Jobs_Max_Salary>
+        <naukri-version-1:Jobs_Min_Education>UG: B.Tech/B.E. in Any Specialization
+PG: M.Tech/M.Sc(Science) in Any Specialization</naukri-version-1:Jobs_Min_Education>
+        <naukri-version-1:Jobs_Min_Education_PG>PG: M.Tech/M.Sc(Science) in Any Specialization</naukri-version-1:Jobs_Min_Education_PG>
+        <naukri-version-1:Jobs_Min_Education_UG>UG: B.Tech/B.E. in Any Specialization</naukri-version-1:Jobs_Min_Education_UG>
+        <naukri-version-1:Jobs_Min_Experience_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</naukri-version-1:Jobs_Min_Experience_Years>
+        <naukri-version-1:Jobs_Min_Salary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900000</naukri-version-1:Jobs_Min_Salary>
+        <naukri-version-1:Jobs_No_of_Openings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</naukri-version-1:Jobs_No_of_Openings>
+        <naukri-version-1:Jobs_Posting_Title>Senior Backend Developer</naukri-version-1:Jobs_Posting_Title>
+        <naukri-version-1:Jobs_Role>Full Stack Developer</naukri-version-1:Jobs_Role>
+        <naukri-version-1:Jobs_Role_Category>Software Development</naukri-version-1:Jobs_Role_Category>
+        <naukri-version-1:Jobs_Salary_Range>9,00,000 - 11,00,000</naukri-version-1:Jobs_Salary_Range>
+        <naukri-version-1:Jobs_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3008</naukri-version-1:Jobs_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Mariott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Mariott">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <naukri-version-1:Companies_About_Company>Marriott International, Inc. is based in Bethesda, Maryland, USA, and encompasses a portfolio of approximately 9,000 properties across more than 30 leading brands in 141 countries and territories.</naukri-version-1:Companies_About_Company>
+        <naukri-version-1:Companies_Company_Type>Foreign MNC</naukri-version-1:Companies_Company_Type>
+        <naukri-version-1:Companies_Department>Administration &amp; Facilities</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Customer Success, Service &amp; Operations</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Finance &amp; Accounting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Food, Beverage &amp; Hospitality</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Human Resources</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>IT &amp; Information Security</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Legal &amp; Regulatory</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Marketing &amp; Communication</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Procurement &amp; Supply Chain</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Production, Manufacturing &amp; Engineering</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sales &amp; Business Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Security Services</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sports, Fitness &amp; Personal Care</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Strategic &amp; Top Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Teaching &amp; Training</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Industry>Hotels &amp; Restaurants</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Location>Ahmedabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Bengaluru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chandigarh</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chennai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Delhi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Gurugram</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Hyderabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jaipur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jodhpur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kochi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kolkata</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mumbai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Nagpur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Pune</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Siliguri</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Udaipur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Name>Mariott</naukri-version-1:Companies_Name>
+        <naukri-version-1:Companies_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1001</naukri-version-1:Companies_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Paytm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <naukri-version-1:Companies_About_Company>Paytm is India&apos;s largest leading payment gateway that offers comprehensive payment services for customer and merchants. We offer mobile payment solutions to over 7 million merchants and allow consumers to make seamless mobile payments from Cards, Bank Accounts and Digital Credit among others. We pioneered and are the leader of QR based mobile payments in India. With the launch of Paytm Payments Bank, we aim to bring banking and financial services to half-a-billion un-served and under-served Indians. Our investors include Softbank, SAIF Partners, Alibaba Group and Ant Financial. We strive to maintain an open culture where everyone is a hands-on contributor and feels comfortable sharing ideas and opinions. Our team spends hours, designing each new feature and obsesses about the smallest of details.</naukri-version-1:Companies_About_Company>
+        <naukri-version-1:Companies_Company_Type>Corporate</naukri-version-1:Companies_Company_Type>
+        <naukri-version-1:Companies_Department>BFSI, Investments &amp; Trading</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Content, Editorial &amp; Journalism</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Customer Success, Service &amp; Operations</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Data Science &amp; Analytics</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Engineering - Software &amp; QA</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Finance &amp; Accounting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Human Resources</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>IT &amp; Infomation Security</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Legal &amp; Regulatory</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Marketing &amp; Communication</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Procurement &amp; Supply Chain</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Product Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Project &amp; Program Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>RIsk Management &amp; Compliance</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sales &amp; Business Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>UX, Design &amp; Architecture</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Industry>Banking</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Industry>FinTech/Payments</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Industry>Financial Services</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Industry>Internet</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Industry>Investment Banking/Venture Capital/PrivateEquity</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Location>Ahmedabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Amritsar</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Bengaluru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chandigarh</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chennai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Delhi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Gurugram</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Hyderabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jaipur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kolkata</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Ludhiana</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mumbai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mysuru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Noida</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Pune</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Vishakapatnam</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Name>Paytm</naukri-version-1:Companies_Name>
+        <naukri-version-1:Companies_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</naukri-version-1:Companies_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#SAP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#SAP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <naukri-version-1:Companies_About_Company>SAP India Pvt.Ltd</naukri-version-1:Companies_About_Company>
+        <naukri-version-1:Companies_Company_Type>Corporate</naukri-version-1:Companies_Company_Type>
+        <naukri-version-1:Companies_Department>Consulting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Content, Editorial &amp; Journalism</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Customer Success, Service &amp; Operations</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Data Science &amp; Analytics</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Engineering - Hardware &amp; Networks</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Engineering - Software &amp; QA</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Finance &amp; Accounting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Human Resources</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>IT &amp; Information Security</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Legal &amp; Regulatory</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Marketing &amp; Communication</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Procurement &amp; Supply Chain</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Product Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Projet &amp; Program Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Risk Management &amp; Compliance</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sales &amp; Business Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>UX, Design &amp; Architecture</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Industry>IT Services &amp; Consulting</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Industry>Software Product</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Location>Bengaluru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Delhi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Gurugram</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mumbai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Pune</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Name>SAP</naukri-version-1:Companies_Name>
+        <naukri-version-1:Companies_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1004</naukri-version-1:Companies_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Soumik_Pal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Soumik_Pal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+        <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_X"/>
+        <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Class_XII"/>
+        <naukri-version-1:Applicants_Education_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#UG"/>
+        <naukri-version-1:Applicants_Employment_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory1"/>
+        <naukri-version-1:Applicants_Employment_History rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#JobHistory2"/>
+        <naukri-version-1:Applicants_Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</naukri-version-1:Applicants_Age>
+        <naukri-version-1:Applicants_Education_Level>Class X, Class XII, B.Tech, M.Tech</naukri-version-1:Applicants_Education_Level>
+        <naukri-version-1:Applicants_Education_Level_PG>M.Tech</naukri-version-1:Applicants_Education_Level_PG>
+        <naukri-version-1:Applicants_Education_Level_UG>B.Tech</naukri-version-1:Applicants_Education_Level_UG>
+        <naukri-version-1:Applicants_Email>soumik1410@gmail.com</naukri-version-1:Applicants_Email>
+        <naukri-version-1:Applicants_Experience_In_Years rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</naukri-version-1:Applicants_Experience_In_Years>
+        <naukri-version-1:Applicants_Gender>Male</naukri-version-1:Applicants_Gender>
+        <naukri-version-1:Applicants_Key_Skills>Python, Java, Flask, Django, Spring Boot, React JS, Node JS, SQL, Git, Jenkins, Docker, DSA, Machine Learning, Deep Learning, HTML, Javascript</naukri-version-1:Applicants_Key_Skills>
+        <naukri-version-1:Applicants_Mobile>8336025514</naukri-version-1:Applicants_Mobile>
+        <naukri-version-1:Applicants_Name>Soumik Pal</naukri-version-1:Applicants_Name>
+        <naukri-version-1:Applicants_Preferred_Locations>Kolkata, Bengaluru, Mumbai, Gurugram, Pune, Hyderabad, Noida, Delhi</naukri-version-1:Applicants_Preferred_Locations>
+        <naukri-version-1:Applicants_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</naukri-version-1:Applicants_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#UG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#UG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+        <naukri-version-1:Educations_College_or_School_Name>Indian Institute of Engineering, Science and Technology, Shibpur</naukri-version-1:Educations_College_or_School_Name>
+        <naukri-version-1:Educations_Degree>B.Tech</naukri-version-1:Educations_Degree>
+        <naukri-version-1:Educations_Percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#float">89.1</naukri-version-1:Educations_Percentage>
+        <naukri-version-1:Educations_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4002</naukri-version-1:Educations_Surrogate_ID>
+        <naukri-version-1:Educations_Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</naukri-version-1:Educations_Year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Unacademy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Unacademy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+        <naukri-version-1:Companies_About_Company>Unacademy is India’s largest, online learning platform. It allows educators to create courses on various subjects. Our vision is to get the best minds of the country to share knowledge in an easily comprehensible form. In terms of traction, our platform attracts more than two million video views monthly and the growth is mostly organic. You can find out more about our journey in this YourStory article: https://yourstory.com/2016/08/unacademy-funding-blume-ventures/. • In a span of 6 months, over 300,000 students have benefited from over 2,400 online lessons and specialized courses on cracking various competitive examinations, on our platform. • With over 2 million views every month, we are touching the lives of people in the remotest corners of the country. Check us out: https://blog.unacademy.com/ https://medium.com/@unacademyHQ Our Channels on YouTube: https://www.youtube.com/user/unacademy https://www.youtube.com/channel/UCHEe_mO3BXSlU3xpK52Zr4g Follow us: Facebook: https://www.facebook.com/unacademy Instagram: https://www.instagram.com/unacademy/ Twitter: https://twitter.com/unacademy</naukri-version-1:Companies_About_Company>
+        <naukri-version-1:Companies_Company_Type>Startup</naukri-version-1:Companies_Company_Type>
+        <naukri-version-1:Companies_Department>Content, Editorial &amp; Journalism</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Engineering - Software &amp; QA</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Finance &amp; Accounting</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Human Resources</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Legal &amp; Regulatory</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Marketing &amp; Communication</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Product Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Sales &amp; Business Development</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Strategic &amp; Top Management</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>Teaching &amp; Training</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Department>UX, Design &amp; Architecture</naukri-version-1:Companies_Department>
+        <naukri-version-1:Companies_Industry>Education/Training</naukri-version-1:Companies_Industry>
+        <naukri-version-1:Companies_Location>Ahmedabad</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Bengaluru</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chandigarh</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Chennai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Delhi</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Indore</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Jaipur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kolkata</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Kota</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Lucknow</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Mumbai</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Noida</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Patna</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Pune</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Location>Solapur</naukri-version-1:Companies_Location>
+        <naukri-version-1:Companies_Name>Unacademy</naukri-version-1:Companies_Name>
+        <naukri-version-1:Companies_Surrogate_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1003</naukri-version-1:Companies_Surrogate_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Applicants"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Companies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Educations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Employments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#Job_Postings"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

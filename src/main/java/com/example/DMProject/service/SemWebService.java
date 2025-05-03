@@ -24,7 +24,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.util.Iterator;
+import java.util.*;
 
 @Service
 public class SemWebService {
@@ -391,6 +391,136 @@ public class SemWebService {
         }
         else
             return "Login Failed";
+    }
+
+    public List<Map<String, Object>> getAppliedJobs(String token) throws FileNotFoundException {
+        Model model = ModelFactory.createDefaultModel();
+        InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+        model.read(inA, null, "RDF/XML");
+
+        int applicant_id = Integer.parseInt(token);
+
+        String sparqlQuery = "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                "SELECT ?id " +
+                "(GROUP_CONCAT(DISTINCT ?title; separator=\"|\") AS ?titles) " +
+                "(GROUP_CONCAT(DISTINCT ?description; separator=\"|\") AS ?descriptions) " +
+                "(GROUP_CONCAT(DISTINCT ?location; separator=\"|\") AS ?locations) " +
+                "(GROUP_CONCAT(DISTINCT ?skills; separator=\"|\") AS ?skillsList) " +
+                "(GROUP_CONCAT(DISTINCT ?department; separator=\"|\") AS ?departments) " +
+                "(GROUP_CONCAT(DISTINCT ?industry; separator=\"|\") AS ?industries) \n" +
+                "(GROUP_CONCAT(DISTINCT ?company; separator=\"|\") AS ?companies)\n" +
+                "WHERE {\n" +
+                "  ?applicant a ont:Applicants ;\n" +
+                "             ont:Applicants_Surrogate_ID " + applicant_id + " ;\n" +
+                "             ont:Applicants_Applied_To ?job .\n" +
+                "  ?job a ont:Job_Postings ;\n" +
+                "        ont:Jobs_Surrogate_ID ?id ;\n" +
+                "        ont:Jobs_Posting_Title ?title ;\n" +
+                "        ont:Jobs_Job_Description ?description ;\n" +
+                "        ont:Jobs_Location ?location ;\n" +
+                "        ont:Jobs_Key_Skills ?skills ;\n" +
+                "        ont:Jobs_Department ?department ;\n" +
+                "        ont:Jobs_Industry ?industry ;\n" +
+                "        ont:Jobs_Posting_Company ?company .\n" +
+                "}\n" +
+                "GROUP BY ?id";
+
+        Query query = QueryFactory.create(sparqlQuery);
+        List<Map<String, Object>> jobDetails = new ArrayList<>();
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+            ResultSet results = qexec.execSelect();
+
+            while (results.hasNext()) {
+                QuerySolution sol = results.nextSolution();
+                Map<String, Object> job = new HashMap<>();
+                Literal idLiteral = sol.getLiteral("id");
+                try {
+                    job.put("id", Integer.toString(idLiteral.getInt()));
+                }
+                catch(NumberFormatException e)
+                {
+                    job.put("id", sol.get("id").toString());
+                }
+                job.put("titles", Arrays.asList(sol.get("titles").toString().split("\\|")));
+                job.put("descriptions", Arrays.asList(sol.get("descriptions").toString().split("\\|")));
+                job.put("locations", Arrays.asList(sol.get("locations").toString().split("\\|")));
+                job.put("skills", Arrays.asList(sol.get("skillsList").toString().split("\\|")));
+                job.put("departments", Arrays.asList(sol.get("departments").toString().split("\\|")));
+                job.put("industries", Arrays.asList(sol.get("industries").toString().split("\\|")));
+                job.put("company", Arrays.asList(sol.get("companies").toString().split("\\|")));
+                jobDetails.add(job);
+            }
+        }
+
+        return jobDetails;
+    }
+
+    public List<Map<String, Object>> getAvailableJobs(String token) throws FileNotFoundException {
+        Model model = ModelFactory.createDefaultModel();
+        InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+        model.read(inA, null, "RDF/XML");
+
+        int applicant_id = Integer.parseInt(token);
+
+        String sparqlQuery = "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                "\n" +
+                "SELECT ?id \n" +
+                "       (GROUP_CONCAT(DISTINCT ?title; separator=\"|\") AS ?titles)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?description; separator=\"|\") AS ?descriptions)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?location; separator=\"|\") AS ?locations)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?skills; separator=\"|\") AS ?skillsList)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?department; separator=\"|\") AS ?departments)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?industry; separator=\"|\") AS ?industries)\n" +
+                "       (GROUP_CONCAT(DISTINCT ?company; separator=\"|\") AS ?companies)\n" +
+                "WHERE {\n" +
+                "  ?job a ont:Job_Postings ;\n" +
+                "       ont:Jobs_Surrogate_ID ?id ;\n" +
+                "       ont:Jobs_Posting_Title ?title ;\n" +
+                "       ont:Jobs_Job_Description ?description ;\n" +
+                "       ont:Jobs_Location ?location ;\n" +
+                "       ont:Jobs_Key_Skills ?skills ;\n" +
+                "       ont:Jobs_Department ?department ;\n" +
+                "       ont:Jobs_Industry ?industry ;\n" +
+                "       ont:Jobs_Posting_Company ?company .\n" +
+                "\n" +
+                "  FILTER NOT EXISTS {\n" +
+                "    ?applicant a ont:Applicants ;\n" +
+                "               ont:Applicants_Surrogate_ID " + applicant_id + " ;\n" +
+                "               ont:Applicants_Applied_To ?job .\n" +
+                "  }\n" +
+                "}\n" +
+                "GROUP BY ?id\n";
+
+        Query query = QueryFactory.create(sparqlQuery);
+        List<Map<String, Object>> jobDetails = new ArrayList<>();
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+            ResultSet results = qexec.execSelect();
+
+            while (results.hasNext()) {
+                QuerySolution sol = results.nextSolution();
+                Map<String, Object> job = new HashMap<>();
+                Literal idLiteral = sol.getLiteral("id");
+                try {
+                    job.put("id", Integer.toString(idLiteral.getInt()));
+                }
+                catch(NumberFormatException e)
+                {
+                    job.put("id", sol.get("id").toString());
+                }
+                job.put("titles", Arrays.asList(sol.get("titles").toString().split("\\|")));
+                job.put("descriptions", Arrays.asList(sol.get("descriptions").toString().split("\\|")));
+                job.put("locations", Arrays.asList(sol.get("locations").toString().split("\\|")));
+                job.put("skills", Arrays.asList(sol.get("skillsList").toString().split("\\|")));
+                job.put("departments", Arrays.asList(sol.get("departments").toString().split("\\|")));
+                job.put("industries", Arrays.asList(sol.get("industries").toString().split("\\|")));
+                job.put("company", Arrays.asList(sol.get("companies").toString().split("\\|")));
+                jobDetails.add(job);
+            }
+        }
+
+        return jobDetails;
     }
 
     public String loginCompany(CompanyLoginRequest request)

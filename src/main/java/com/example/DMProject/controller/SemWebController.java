@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.InputStream;
 import java.net.URL;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/ontology")
@@ -61,13 +63,21 @@ public class SemWebController {
 
     }
 
-    /*@GetMapping("/jobs")
-    public ResponseEntity<String> getJobs(@RequestParam String filePath, @RequestHeader(value = "x-access-token") String token) throws Exception {
-        List<JobsResponse> obj = SemWebServiceObj.getJobs(filePath, token);
-        if(obj != null)
-            return ResponseEntity.ok(obj);
+    @GetMapping("/getAppliedJobs")
+    public ResponseEntity<?> getAppliedJobs(@RequestHeader(value = "x-access-token") String token) throws Exception {
+        List<Map<String, Object>> appliedJobDetails = SemWebServiceObj.getAppliedJobs(token);
+        if(appliedJobDetails != null)
+            return ResponseEntity.ok(appliedJobDetails);
         else
             return ResponseEntity.badRequest().body("Invalid token");
-    }*/
+    }
 
+    @GetMapping("/getAvailableJobs")
+    public ResponseEntity<?> getAvailableJobs(@RequestHeader(value = "x-access-token") String token) throws Exception {
+        List<Map<String, Object>> getAvailableJobs = SemWebServiceObj.getAvailableJobs(token);
+        if(getAvailableJobs != null)
+            return ResponseEntity.ok(getAvailableJobs);
+        else
+            return ResponseEntity.badRequest().body("Invalid token");
+    }
 }

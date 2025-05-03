@@ -10,10 +10,18 @@ import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.reasoner.ValidityReport;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import org.apache.jena.vocabulary.OWL;
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.QuerySolution;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.Iterator;
@@ -351,12 +359,36 @@ public class SemWebService {
             return "Login Failed";
     }
 
-    public String loginApplicant(ApplicantLoginRequest request)
+    public String loginApplicant(ApplicantLoginRequest request) throws Exception
     {
         String username = request.name();
         String password = request.password();
-        if((username.equals("aman") && password.equals("password")) || (username.equals("soumik") && password.equals("password")))
-            return "Login Successful";
+        if((username.equals("Aman Bahuguna") && password.equals("password")) || (username.equals("Soumik Pal") && password.equals("password")))
+        {
+            Model model = ModelFactory.createDefaultModel();
+            InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+            model.read(inA, null, "RDF/XML");
+
+            String sparqlQuery =
+                    "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                            "SELECT ?id WHERE {\n" +
+                            "  ?applicant a ont:Applicants ;\n" +
+                            "             ont:Applicants_Name \"" + username + "\" ;\n" +
+                            "             ont:Applicants_Surrogate_ID ?id .\n" +
+                            "}";
+            System.out.println(sparqlQuery);
+            Query query = QueryFactory.create(sparqlQuery);
+            try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+                ResultSet results = qexec.execSelect();
+                if (results.hasNext()) {
+                    QuerySolution sol = results.nextSolution();
+                    Literal idLiteral = sol.getLiteral("id");
+                    return Integer.toString(idLiteral.getInt());
+                } else {
+                    return "Login Failed";
+                }
+            }
+        }
         else
             return "Login Failed";
     }

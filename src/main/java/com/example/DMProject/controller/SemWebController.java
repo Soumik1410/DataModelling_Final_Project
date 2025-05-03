@@ -34,10 +34,10 @@ public class SemWebController {
     }
 
     @PostMapping("/loginApplicant")
-    public ResponseEntity<String> loginApplicant(@RequestBody @Valid ApplicantLoginRequest request) {
+    public ResponseEntity<String> loginApplicant(@RequestBody @Valid ApplicantLoginRequest request) throws Exception {
         String response = SemWebServiceObj.loginApplicant(request);
         if(!response.equals("Login Failed"))
-            return ResponseEntity.ok("Logged in successfully as Applicant\nToken: applicant");
+            return ResponseEntity.ok("Logged in successfully as Applicant\nToken: " + response);
         else
             return ResponseEntity.badRequest().body(response);
     }
@@ -60,4 +60,14 @@ public class SemWebController {
             return ResponseEntity.badRequest().body(response);
 
     }
+
+    /*@GetMapping("/jobs")
+    public ResponseEntity<String> getJobs(@RequestParam String filePath, @RequestHeader(value = "x-access-token") String token) throws Exception {
+        List<JobsResponse> obj = SemWebServiceObj.getJobs(filePath, token);
+        if(obj != null)
+            return ResponseEntity.ok(obj);
+        else
+            return ResponseEntity.badRequest().body("Invalid token");
+    }*/
+
 }

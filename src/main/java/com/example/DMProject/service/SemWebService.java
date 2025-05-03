@@ -7,7 +7,6 @@ import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
-import org.apache.jena.reasoner.ValidityReport;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import org.apache.jena.vocabulary.OWL;
 import org.apache.jena.query.Query;
@@ -18,11 +17,9 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.QuerySolution;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.*;
 

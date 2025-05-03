@@ -376,7 +376,7 @@ public class SemWebService {
                             "             ont:Applicants_Name \"" + username + "\" ;\n" +
                             "             ont:Applicants_Surrogate_ID ?id .\n" +
                             "}";
-            System.out.println(sparqlQuery);
+
             Query query = QueryFactory.create(sparqlQuery);
             try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
                 ResultSet results = qexec.execSelect();
@@ -523,17 +523,171 @@ public class SemWebService {
         return jobDetails;
     }
 
-    public String loginCompany(CompanyLoginRequest request)
-    {
+    public String loginCompany(CompanyLoginRequest request) throws FileNotFoundException {
         String username = request.name();
         String password = request.password();
-        if((username.equals("fortis") && password.equals("fortis"))
-                || (username.equals("mariott") && password.equals("mariott"))
-                || (username.equals("paytm") && password.equals("paytm"))
-                || (username.equals("sap") && password.equals("sap"))
-                || (username.equals("unacademy") && password.equals("unacademy")))
-            return "Login Successful";
+        if((username.equals("Fortis") && password.equals("fortis"))
+                || (username.equals("Mariott") && password.equals("mariott"))
+                || (username.equals("Paytm") && password.equals("paytm"))
+                || (username.equals("SAP") && password.equals("sap"))
+                || (username.equals("Google") && password.equals("google"))
+                || (username.equals("Amazon") && password.equals("amazon"))
+                || (username.equals("Bajaj") && password.equals("bajaj"))
+                || (username.equals("Infosys") && password.equals("infosys"))
+                || (username.equals("Unacademy") && password.equals("unacademy"))){
+
+            Model model = ModelFactory.createDefaultModel();
+            InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+            model.read(inA, null, "RDF/XML");
+
+            String sparqlQuery =
+                    "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                            "SELECT ?id WHERE {\n" +
+                            "  ?company a ont:Companies ;\n" +
+                            "             ont:Companies_Name \"" + username + "\" ;\n" +
+                            "             ont:Companies_Surrogate_ID ?id .\n" +
+                            "}";
+
+            Query query = QueryFactory.create(sparqlQuery);
+            try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+                ResultSet results = qexec.execSelect();
+                if (results.hasNext()) {
+                    QuerySolution sol = results.nextSolution();
+                    Literal idLiteral = sol.getLiteral("id");
+                    return Integer.toString(idLiteral.getInt());
+                } else {
+                    return "Login Failed";
+                }
+            }
+        }
         else
             return "Login Failed";
+    }
+
+    public List<Map<String, Object>> getPostedJobs(String token) throws FileNotFoundException {
+        Model model = ModelFactory.createDefaultModel();
+        InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+        model.read(inA, null, "RDF/XML");
+
+        int company_id = Integer.parseInt(token);
+
+        String sparqlQuery = "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                "SELECT ?id " +
+                "(GROUP_CONCAT(DISTINCT ?title; separator=\"|\") AS ?titles) " +
+                "(GROUP_CONCAT(DISTINCT ?description; separator=\"|\") AS ?descriptions) " +
+                "(GROUP_CONCAT(DISTINCT ?location; separator=\"|\") AS ?locations) " +
+                "(GROUP_CONCAT(DISTINCT ?skills; separator=\"|\") AS ?skillsList) " +
+                "(GROUP_CONCAT(DISTINCT ?department; separator=\"|\") AS ?departments) " +
+                "(GROUP_CONCAT(DISTINCT ?industry; separator=\"|\") AS ?industries) \n" +
+                "(GROUP_CONCAT(DISTINCT ?companyName; separator=\"|\") AS ?companies)\n" +
+                "WHERE {\n" +
+                "  ?company a ont:Companies ;\n" +
+                "             ont:Companies_Surrogate_ID " + company_id + " .\n" +
+                "  ?job a ont:Job_Postings ;\n" +
+                "        ont:Jobs_Surrogate_ID ?id ;\n" +
+                "        ont:Jobs_Posting_Title ?title ;\n" +
+                "        ont:Jobs_Job_Description ?description ;\n" +
+                "        ont:Jobs_Location ?location ;\n" +
+                "        ont:Jobs_Key_Skills ?skills ;\n" +
+                "        ont:Jobs_Department ?department ;\n" +
+                "        ont:Jobs_Industry ?industry ;\n" +
+                "        ont:Jobs_Posting_Company ?company .\n" +
+                "  ?company ont:Companies_Name ?companyName .\n" +
+                "}\n" +
+                "GROUP BY ?id";
+
+        Query query = QueryFactory.create(sparqlQuery);
+        List<Map<String, Object>> jobDetails = new ArrayList<>();
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+            ResultSet results = qexec.execSelect();
+
+            while (results.hasNext()) {
+                QuerySolution sol = results.nextSolution();
+                Map<String, Object> job = new HashMap<>();
+                Literal idLiteral = sol.getLiteral("id");
+                try {
+                    job.put("id", Integer.toString(idLiteral.getInt()));
+                }
+                catch(NumberFormatException e)
+                {
+                    job.put("id", sol.get("id").toString());
+                }
+                job.put("titles", Arrays.asList(sol.get("titles").toString().split("\\|")));
+                job.put("descriptions", Arrays.asList(sol.get("descriptions").toString().split("\\|")));
+                job.put("locations", Arrays.asList(sol.get("locations").toString().split("\\|")));
+                job.put("skills", Arrays.asList(sol.get("skillsList").toString().split("\\|")));
+                job.put("departments", Arrays.asList(sol.get("departments").toString().split("\\|")));
+                job.put("industries", Arrays.asList(sol.get("industries").toString().split("\\|")));
+                job.put("company", Arrays.asList(sol.get("companies").toString().split("\\|")));
+                jobDetails.add(job);
+            }
+        }
+
+        return jobDetails;
+    }
+
+    public List<Map<String, Object>> getJobApplicants(int job_id, String token) throws FileNotFoundException {
+        Model model = ModelFactory.createDefaultModel();
+        InputStream inA = new FileInputStream("C:\\IIITB MTech Sem 2\\DM\\FinalProject\\demo\\inferred_model.rdf");
+        model.read(inA, null, "RDF/XML");
+
+        int company_id = Integer.parseInt(token);
+        if(company_id < 1000 || company_id > 1999)
+            return null;
+
+        String sparqlQuery = "PREFIX ont: <http://www.semanticweb.org/soumik/ontologies/2025/3/naukri-version-1#>\n" +
+                "SELECT ?id \n" +
+                "(GROUP_CONCAT(DISTINCT ?name; separator=\"|\") AS ?names)\n" +
+                "(GROUP_CONCAT(DISTINCT ?email; separator=\"|\") AS ?emails)\n" +
+                "(GROUP_CONCAT(DISTINCT ?mobile; separator=\"|\") AS ?mobiles)\n" +
+                "(GROUP_CONCAT(DISTINCT ?age; separator=\"|\") AS ?ages)\n" +
+                "(GROUP_CONCAT(DISTINCT ?gender; separator=\"|\") AS ?genders)\n" +
+                "(GROUP_CONCAT(DISTINCT ?experience; separator=\"|\") AS ?experiences)\n" +
+                "WHERE {\n" +
+                "  ?job a ont:Job_Postings ;\n" +
+                "       ont:Jobs_Surrogate_ID ?jobIdVal .\n" +
+                "\n" +
+                "  ?applicant a ont:Applicants ;\n" +
+                "             ont:Applicants_Surrogate_ID ?id ;\n" +
+                "             ont:Applicants_Name ?name ;\n" +
+                "             ont:Applicants_Email ?email ;\n" +
+                "             ont:Applicants_Mobile ?mobile ;\n" +
+                "             ont:Applicants_Age ?age ;\n" +
+                "             ont:Applicants_Gender ?gender ;\n" +
+                "             ont:Applicants_Experience_In_Years ?experience ;\n" +
+                "             ont:Applicants_Applied_To ?job .\n" +
+                "  FILTER(str(?jobIdVal) = \"" + job_id + "\")\n" +
+                "}\n" +
+                "GROUP BY ?id\n";
+
+        Query query = QueryFactory.create(sparqlQuery);
+        List<Map<String, Object>> applicantDetails = new ArrayList<>();
+
+        try (QueryExecution qexec = QueryExecutionFactory.create(query, model)) {
+            ResultSet results = qexec.execSelect();
+
+            while (results.hasNext()) {
+                QuerySolution sol = results.nextSolution();
+                Map<String, Object> applicant = new HashMap<>();
+                Literal idLiteral = sol.getLiteral("id");
+                try {
+                    applicant.put("id", Integer.toString(idLiteral.getInt()));
+                }
+                catch(NumberFormatException e)
+                {
+                    applicant.put("id", sol.get("id").toString());
+                }
+                applicant.put("name", Arrays.asList(sol.get("names").toString().split("\\|")));
+                applicant.put("email", Arrays.asList(sol.get("emails").toString().split("\\|")));
+                applicant.put("phone", Arrays.asList(sol.get("mobiles").toString().split("\\|")));
+                applicant.put("age", Arrays.asList(sol.get("ages").toString().split("\\|")));
+                applicant.put("gender", Arrays.asList(sol.get("genders").toString().split("\\|")));
+                applicant.put("experience_in_years", Arrays.asList(sol.get("experiences").toString().split("\\|")));
+                applicantDetails.add(applicant);
+            }
+        }
+
+        return applicantDetails;
     }
 }

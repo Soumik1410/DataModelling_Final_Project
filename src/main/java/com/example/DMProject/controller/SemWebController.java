@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
@@ -45,10 +46,10 @@ public class SemWebController {
     }
 
     @PostMapping("/loginCompany")
-    public ResponseEntity<String> loginCompany(@RequestBody @Valid CompanyLoginRequest request) {
+    public ResponseEntity<String> loginCompany(@RequestBody @Valid CompanyLoginRequest request) throws FileNotFoundException {
         String response = SemWebServiceObj.loginCompany(request);
         if(!response.equals("Login Failed"))
-            return ResponseEntity.ok("Logged in successfully as Company\nToken: company");
+            return ResponseEntity.ok("Logged in successfully as Company\nToken: " + response);
         else
             return ResponseEntity.badRequest().body(response);
     }
@@ -77,6 +78,24 @@ public class SemWebController {
         List<Map<String, Object>> getAvailableJobs = SemWebServiceObj.getAvailableJobs(token);
         if(getAvailableJobs != null)
             return ResponseEntity.ok(getAvailableJobs);
+        else
+            return ResponseEntity.badRequest().body("Invalid token");
+    }
+
+    @GetMapping("/getPostedJobs")
+    public ResponseEntity<?> getPostedJobs(@RequestHeader(value = "x-access-token") String token) throws Exception {
+        List<Map<String, Object>> postedJobDetails = SemWebServiceObj.getPostedJobs(token);
+        if(postedJobDetails != null)
+            return ResponseEntity.ok(postedJobDetails);
+        else
+            return ResponseEntity.badRequest().body("Invalid token");
+    }
+
+    @GetMapping("/getJobApplicants/{job_id}")
+    public ResponseEntity<?> getJobApplicants(@PathVariable int job_id, @RequestHeader(value = "x-access-token") String token) throws Exception {
+        List<Map<String, Object>> jobApplicants = SemWebServiceObj.getJobApplicants(job_id, token);
+        if(jobApplicants != null)
+            return ResponseEntity.ok(jobApplicants);
         else
             return ResponseEntity.badRequest().body("Invalid token");
     }
